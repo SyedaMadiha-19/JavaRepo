@@ -9,7 +9,7 @@ public class Main4
         int a = sc.nextInt();
         int b = sc.nextInt();
         sc.close();
-        int sum = a / b;
+        int sum = a + b;
 
         System.out.println(sum);
 
