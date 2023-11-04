@@ -18,9 +18,12 @@ public class Quadratic {
         double result1 = (-b+y) / (2*a);
         double result2 = (-b-y) / (2*a);
 
-        System.out.println("Your quadratic equation " + a + "x^2 + " + b + "x + " + c);
-        System.out.println("result1: " + result1);
-        System.out.println("result1: " + result2);
-
+        if(y>0){
+         System.out.println("Given quadratic equation has roots"+ result1);
+         System.out.println("and"+result2);
+        }
+        else{
+            System.out.println("Roots are imaginary");
+        }
     }
 }
