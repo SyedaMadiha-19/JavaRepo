@@ -19,11 +19,19 @@ public class Quadratic {
         double result2 = (-b-y) / (2*a);
 
         if(y>0){
-         System.out.println("Given quadratic equation has roots"+ result1);
-         System.out.println("and"+result2);
+         System.out.println("The equation has real & distinct roots");
+         System.out.println("The roots are" +result1+ "and" +result2);
+        }
+        else if(y==0){
+            double root=-b/(2*a);
+            System.out.println("The equation has real and equal roots");
+            System.out.println("The root is" +root);
         }
         else{
             System.out.println("Roots are imaginary");
+            double realp = -b/(2*a);
+            double imagp = -y/(2*a);
+            System.out.printf("The roots are (%2f + i%4f) and (%2f - i%4f)\n", realp,imagp,realp,imagp);
         }
     }
 }
