@@ -18,11 +18,7 @@ public class LinearSearch {
 
         for(int i=0;i<arr.length;i++){
             if (arr[i]==x) {
-                System.out.println("x is found at "+(i+1)+"th position");
-            }
-           else if(arr[i] != x) {
-                System.out.println("this number is not in the array");
-                break;
+                System.out.println(x+" is found at position "+(i+1));
             }
             
             
