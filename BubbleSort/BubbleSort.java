@@ -5,7 +5,7 @@ public class BubbleSort{
     
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int size=0;
+        int size,choice=0;
         System.out.println("Enter the size of array");
         size = sc.nextInt();
         
@@ -14,11 +14,15 @@ public class BubbleSort{
         for(int i=0;i<size;i++){
              a[i] = sc.nextInt();
         }
+        System.out.println("Enter choice 1 to arrange elements in ascending order \n or 2 for descending order");
+        choice = sc.nextInt();
 
-        //bubble sort
-        for(int i=0; i<a.length-1;i++){
-            for(int j=0;j<a.length-i-1;j++){
-                if (a[j]>a[j+1]) {
+        switch (choice) {
+            case 1:                   
+             //bubble sort
+            for(int i=0; i<a.length-1;i++){
+               for(int j=0;j<a.length-i-1;j++){
+                  if (a[j]>a[j+1]) {
                     int temp = a[j];
                     a[j]= a[j+1];
                     a[j+1]=temp;
@@ -28,5 +32,29 @@ public class BubbleSort{
             
         }
         System.out.println(Arrays.toString(a));
+    
+                break;
+
+            case 2:
+                //bubble sort
+             for(int i=0; i<a.length-1;i++){
+                for(int j=0;j<a.length-i-1;j++){
+                  if (a[j]<a[j+1]) {
+                    int temp = a[j];
+                    a[j]= a[j+1];
+                    a[j+1]=temp;
+                }
+                
+            }
+            
+        }
+        System.out.println(Arrays.toString(a));
+        break;
+
+        default:
+            System.out.println("Wrong Choice!!");
+
     }
-}
+        
+  }
+}   
