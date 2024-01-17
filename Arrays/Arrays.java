@@ -36,7 +36,7 @@ public class Arrays {
         }
         System.out.println("sum of arrays");
         for (int i = 0; i < m; i++) {
-            System.out.println(sumarr[i]);
+            System.out.print(sumarr[i]+" ");
         }
 
     }

@@ -42,7 +42,7 @@ public class BitwiseOperators {
 
             default:
                 System.out.println("!!Invalid Choice!!");
-                break;
+                               
         }
        
     }
